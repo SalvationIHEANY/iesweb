@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* MOBILE FIRST */
+
+body {
+  font-family: Gothic ;
+  line-height: 1.6;
+
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+/* ===== MENÚ ===== */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* móvil */
+  gap: 20px;
+  align-items: center;
+  background: green;
+  padding: 10px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  display: block;
+}
+
+/* pseudoclase obligatoria */
+nav a:hover {
+  background: #0d5039;
+}
+/* titulos h1 h2*/
+h1 , h2 {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+header {
+  background-image: url(asfalto.jpeg);
+}
+section {
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  justify-content: center;
+}
+/* ===== MEDIA QUERY OBLIGATORIA ===== */
+
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
