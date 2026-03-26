@@ -44,23 +44,89 @@ nav a {
 nav a:hover {
   background: #0d5039;
 }
+/* TABLE*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
 /* titulos h1 h2*/
-h1 , h2 {
+h1 , h2, h3 {
   justify-content: center;
   display: flex;
   gap: 10px;
   padding: 10px;
 }
+th {
+  background-color: #e67e22;
+  color: white;
+}
 header {
   background-image: url(asfalto.jpeg);
 }
+
 section {
   justify-content: center;
   align-items: center;
 }
-
+section div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+section article p {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+article{
+  justify-content: center;
+  display: block;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+section article figure {
+  justify-content: center;
+  display: block;
+  margin-left: 150px;
+  margin-right: 150px;
+}
 footer {
   justify-content: center;
+  align-items: center;
+  display: block;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+label {
+    color: #16c4e2; /* Etiquetas en rosa */
+    display: block;
+    margin-top: 15px;
+}
+button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #0ece84;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #fff;
+    box-shadow: 5px 5px 0px #0ad9f5; /* Sombra dura desplazada */
 }
 /* ===== MEDIA QUERY OBLIGATORIA ===== */
 
